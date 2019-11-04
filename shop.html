@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href='./images/icon/favicon.ico'>
+  <link rel="icon" type="image/png" href="./images/icon/favicon-16x16.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/icon/favicon-32x32.png" sizes="16x16" />
+  <title>AEKI</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+  <div style="display:none" class="white_loading_effect">
+    <nav class='shop_left_menu_wrapper'>
+      <div class='shop_left_menu_div shop_left_menu_all_div'><button class='shop_left_menu_all' href='/'>all</button>
+      </div>
+      <div class='shop_left_menu_div garden_fix'><button data-filterRoom='garden' class='shop_left_menu_garden'
+          href="/">garden</button></div>
+      <div class='shop_left_menu_div'><button data-filterRoom='kitchen' class='shop_left_menu_kitchen'
+          href="/">kitchen</button></div>
+      <div class='shop_left_menu_div living_room_fix'><button data-filterRoom='living room'
+          class='shop_left_menu_living_room' href="/">living&nbsp;room</button></div>
+      <div class='shop_left_menu_div'><button data-filterRoom='bathroom' class='shop_left_menu_bathroom'
+          href="/">bathroom</button></div>
+      <div class='shop_left_menu_div'><button data-filterRoom='bedroom' class='shop_left_menu_bedroom'
+          href="/">bedroom</button></div>
+    </nav>
+    <div class="shop_top_nav_wrapper">
+      <nav class='shop_top_nav'>
+        <span class='top_nav_lines'><a href="index.html">about</a></span>
+        <span class='top_nav_lines'><a href="rooms.html">rooms</a></span>
+        <span class='top_nav_lines'><a href="shop.html">shop</a></span>
+        <span class='top_nav_lines'><a href="get_inspired.html">get&nbsp;inspired</a></span>
+      </nav>
+    </div>
+    <main class='shop_main_content_wrapper'>
+      <div class="shop_main_content">
+        <section class='shop_upper_section'>
+          <div class="shop_filter_wrapper">
+            <div class="shop_filter_button_wrapper">
+              <button class="shop_filter_button">filter</button>
+            </div>
+            <div class="shop_filter_buttons_small_wrapper">
+              <div class="shop_filter_button_color">color</div>
+              <div class="shop_filter_button_color_choice">
+                <div class="shop_filter_buttons_first_row">
+                  <div data-filterType='color' data-filterChoice='black' class="shop_filter_button_color_black"></div>
+                  <div data-filterType='color' data-filterChoice='white' class="shop_filter_button_color_white"></div>
+                </div>
+                <div class="shop_filter_buttons_second_row">
+                  <div data-filterType='color' data-filterChoice='grey' class="shop_filter_button_color_grey"></div>
+                  <div data-filterType='color' data-filterChoice='gold' class="shop_filter_button_color_gold"></div>
+                </div>
+              </div>
+              <div class="shop_filter_button_price">price</div>
+              <div class="shop_filter_button_price_choice">
+                <div class="shop_filter_buttons_first_row">
+                  <div data-filterType='price' data-filterChoice='<99$' class='shop_filter_button_price_lessthan99'>
+                    &lt;99$</div>
+                  <div data-filterType='price' data-filterChoice='100$-149$' class='shop_filter_button_price_100-149'>
+                    100$-149$</div>
+                </div>
+                <div class="shop_filter_buttons_second_row">
+                  <div data-filterType='price' data-filterChoice='150$-199$' class='shop_filter_button_price_150-199'>
+                    150$-199$</div>
+                  <div data-filterType='price' data-filterChoice='>200$' class='shop_filter_button_price_morethan200'>
+                    &gt;200$</div>
+                </div>
+              </div>
+            </div>
+            <div class="shop_filter_buttons_small_wrapper">
+              <div class="shop_filter_button_style">style</div>
+              <div class="shop_filter_button_style_choice">
+                <div class="shop_filter_buttons_first_row">
+                  <div data-filterType='style' data-filterChoice='modern'>modern</div>
+                  <div data-filterType='style' data-filterChoice='retro'>retro</div>
+                </div>
+                <div class="shop_filter_buttons_second_row">
+                  <div data-filterType='style' data-filterChoice='minimalistic'>minimalistic</div>
+                  <div data-filterType='style' data-filterChoice='contemporary'>contemporary</div>
+                </div>
+              </div>
+              <div class="shop_filter_button_date">date</div>
+              <div class="shop_filter_button_date_choice">
+                <div class="shop_filter_buttons_first_row">
+                  <div data-filterType='date' data-filterChoice='2016'>2016</div>
+                  <div data-filterType='date' data-filterChoice='2017'>2017</div>
+                </div>
+                <div class="shop_filter_buttons_second_row">
+                  <div data-filterType='date' data-filterChoice='2018'>2018</div>
+                  <div data-filterType='date' data-filterChoice='2019'>2019</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop_logo_wrapper">
+            <div class="shop_aeki_logo">aeki</div>
+            <div class="shop_shop_wrapper">
+              <span class='centring_gold_lines__text_decoration'></span>
+              <div class="shop_shop__text">
+                shop
+              </div>
+              <span class='centring_gold_lines__text_decoration'></span>
+            </div>
+          </div>
+          <div class="shop_search_wrapper">
+            <div class="shop_search_button_wrapper">
+              <button class="shop_search_button">search</button>
+            </div>
+            <div class="shop_input_wrapper">
+              <input class="shop_input" placeholder="eg. sofa noir">
+            </div>
+          </div>
+        </section>
+        <section class='shop_display_items_box'>
+          <div class="shop_display_items_box_decoration_wrapper">
+            <span class='shop_half_square_decoration_left'></span>
+            <span class='shop_half_square_decoration_right'></span>
+          </div>
+          <div class="shop_items_wrapper">
+            <!-- items generated by js -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <button class='shop_up_button up'>
+      <img class='shop_up_button_svg' src="./images/shop_pics/shop_back_to_start.svg" alt="arrow">
+    </button>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href='./images/icon/favicon.ico'>
+  <link rel="icon" type="image/png" href="./images/icon/favicon-16x16.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/icon/favicon-32x32.png" sizes="16x16" />
+  <title>AEKI</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/rooms.js"></script>
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <div class="rooms_site_wrapper">
+    <div class="rooms_background">
+    </div>
+    <div class="rooms_main_content_wrapper">
+      <nav class='rooms_left_menu_wrapper'>
+        <div class='rooms_left_menu_div garden_fix'><button class='rooms_left_menu_garden' href="/">garden</button>
+        </div>
+        <div class='rooms_left_menu_div'><button class='rooms_left_menu_kitchen' href="/">kitchen</button></div>
+        <div class='rooms_left_menu_div living_room_fix'><button class='rooms_left_menu_living_room'
+            href="/">living&nbsp;room</button></div>
+        <div class='rooms_left_menu_div'><button class='rooms_left_menu_bathroom' href="/">bathroom</button></div>
+        <div class='rooms_left_menu_div'><button class='rooms_left_menu_bedroom' href="/">bedroom</button></div>
+      </nav>
+      <div class="rooms_top_nav_wrapper">
+        <div class='rooms_left_menu_div rooms_left_menu_all_div'></div>
+        <nav class='rooms_top_nav'>
+          <span class='top_nav_lines rooms_top_nav_lines'><a href="index.html">about</a></span>
+          <span class='top_nav_lines rooms_top_nav_lines'><a href="rooms.html">rooms</a></span>
+          <span class='top_nav_lines rooms_top_nav_lines'><a href="shop.html">shop</a></span>
+          <span class='top_nav_lines rooms_top_nav_lines'><a href="get_inspired.html">get&nbsp;inspired</a></span>
+          <button class="rooms_top_nav_button">
+            <div class='rooms_nav_button_lines_fixed'>
+              <div class='rooms_nav_button_lines_wrapper'>
+                <span class='rooms_nav_button_line'></span>
+                <span class='rooms_nav_button_line'></span>
+                <span class='rooms_nav_button_line'></span>
+              </div>
+            </div>
+          </button>
+        </nav>
+      </div>
+    </div>
+    <div class="rooms_inside_box">
+      <div class="rooms_bar rooms_left_bar">
+        <button class="rooms_slider_arrow_wrapper_left">
+          <div class='rooms_slider_arrow_first_half rooms_js_slider_button_left_first'></div>
+          <div class='rooms_slider_arrow_second_half rooms_js_slider_button_left_second'></div>
+        </button>
+      </div>
+      <div class="rooms_bar rooms_right_bar">
+        <button class="rooms_slider_arrow_wrapper_right">
+          <div class='rooms_slider_arrow_first_half rooms_js_slider_button_right_first'></div>
+          <div class='rooms_slider_arrow_second_half rooms_js_slider_button_right_second'></div>
+        </button>
+      </div>
+      <div class="rooms_aeki_text_template">aeki</div>
+      <div class='rooms_rooms_text_template'>rooms</div>
+      <div class="rooms_aeki_text_templates_wrapper">
+        <div>
+          furnishing<br>inspirations
+        </div>
+        <div>
+          swedish<br>furniture<br>store
+        </div>
+      </div>
+      <button class='button_fullscreen' onclick="openFullscreen();">click to open site in fullscreen mode</button>
+      <img class='fullscreen_button' src="./images/rooms_pics/fullscreen_button.svg" alt="" srcset="">
+    </div>
+  </div>
+
+</body>
+
+</html>
