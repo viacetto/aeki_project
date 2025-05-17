@@ -1,6 +1,8 @@
 window.addEventListener("load", () => {
   const img = new Image();
-  img.src = `../images/about_pics/header.jpg`;
+  img.src = getComputedStyle($(".about_header")[0])
+    .backgroundImage.replace(/"/g, "")
+    .replace(/url\(|\)$/gi, "");
   img.decode().then(() => {
     document.body.classList.remove("loading");
     $("#loader").css("opacity", 0);
