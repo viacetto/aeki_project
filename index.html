@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href='./images/icon/favicon.ico'>
-  <link rel="icon" type="image/png" href="./images/icon/favicon-16x16.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="./images/icon/favicon-32x32.png" sizes="16x16" />
   <title>AEKI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="preload" href="/images/about_pics/header.jpg" as="image">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet">
@@ -17,13 +18,15 @@
   <script src="./js/jquery.waypoints.min.js"></script>
   <script src="./js/app.js" defer></script>
 </head>
-<body>
-  <header style="display:none" class='about_header'>
+
+<body class="loading">
+  <div id="loader"></div>
+  <header id="main-content" hidden class='about_header'>
     <nav class='about_nav'>
-      <span class='top_nav_lines about_top_nav_lines'><a href="index.html">about</a></span>
-      <span class='top_nav_lines about_top_nav_lines'><a href="rooms.html">rooms</a></span>
-      <span class='top_nav_lines about_top_nav_lines'><a href="shop.html">shop</a></span>
-      <span class='top_nav_lines about_top_nav_lines'><a href="get_inspired.html">get&nbsp;inspired</a></span>
+      <span class='top_nav_lines'><a href="index.html">about</a></span>
+      <span class='top_nav_lines'><a href="rooms.html">rooms</a></span>
+      <span class='top_nav_lines'><a href="shop.html">shop</a></span>
+      <span class='top_nav_lines'><a href="get_inspired.html">get&nbsp;inspired</a></span>
     </nav>
     <div class="about_header__center_wrapper">
       <div class="aeki_logo">aeki</div>
@@ -47,7 +50,8 @@
       <div class="about_about__description_wrapper">
         <div class="about_about__description waypointload_second">
           <div class="about_about__description_header">about</div>
-          <div class="about_about__description_content">Nam ut justo quis justo. Integer nonummy porttitor quis, auctor
+          <div class="about_about__description_content">Nam ut justo quis justo. Integer nonummy porttitor quis,
+            auctor
             mi. Suspendisse ut aliquet pulvinar, pede lobortis velit nulla ornare dolor placerat ante. Curabitur
             scelerisque iaculis.</div>
         </div>
@@ -57,20 +61,22 @@
       </div>
     </div>
   </section>
-  <section class='about_localisation waypointload'>
-    <div class="about_localisation__background_text waypointload_first">
-      localisation
+  <section class='about_location waypointload'>
+    <div class="about_location__background_text waypointload_first">
+      location
     </div>
-    <div class="about_localisation__content_wrapper">
-      <div class="about_localisation__image_wrapper">
-        <img class="about_localisation__image waypointload_second" src="./images/about_pics/localisation_pic.png"
+    <div class="about_location__content_wrapper">
+      <div class="about_location__image_wrapper">
+        <img class="about_location__image waypointload_second" src="./images/about_pics/location_pic.png"
           alt="about_pic">
       </div>
-      <div class="about_localisation__description_wrapper">
-        <div class="about_localisation__description waypointload_third">
-          <div class="about_localisation__description_header">localisation</div>
-          <div class="about_localisation__description_content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quo repellat officiis delectus voluptatibus tempora libero expedita ullam, provident, reprehenderit debitis
+      <div class="about_location__description_wrapper">
+        <div class="about_location__description waypointload_third">
+          <div class="about_location__description_header">location</div>
+          <div class="about_location__description_content">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Quo repellat officiis delectus voluptatibus tempora libero expedita ullam, provident, reprehenderit
+            debitis
             nihil doloremque amet ratione corporis quisquam rem doloribus. Numquam, voluptate.</div>
         </div>
       </div>
@@ -167,4 +173,5 @@
     <div class="up about_back_to_start">back to start</div>
   </footer>
 </body>
+
 </html>

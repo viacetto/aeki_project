@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href='./images/icon/favicon.ico'>
-  <link rel="icon" type="image/png" href="./images/icon/favicon-16x16.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="./images/icon/favicon-32x32.png" sizes="16x16" />
   <title>AEKI</title>
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="preload" href="/images/rooms_pics/bedroom/bedroom_2.jpg" as="image">
+  <link rel="preload" href="/images/rooms_pics/bedroom/bedroom_3.jpg" as="image">
+
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./js/jquery.waypoints.min.js"></script>
-  <script src="./js/rooms.js"></script>
-  <script src="./js/app.js" defer></script>
+  <script src="./js/rooms.js" defer></script>
 </head>
-<body>
-  <div class="rooms_site_wrapper">
-    <div class="rooms_background">
+
+<body class="loading">
+  <div id="loader"></div>
+  <div id="main-content" hidden class="rooms_site_wrapper">
+    <div id="slides-container" class="rooms_background">
     </div>
     <div class="rooms_main_content_wrapper">
       <nav class='rooms_left_menu_wrapper'>
@@ -35,10 +42,10 @@
       <div class="rooms_top_nav_wrapper">
         <div class='rooms_left_menu_div rooms_left_menu_all_div'></div>
         <nav class='rooms_top_nav'>
-          <span class='top_nav_lines rooms_top_nav_lines'><a href="index.html">about</a></span>
-          <span class='top_nav_lines rooms_top_nav_lines'><a href="rooms.html">rooms</a></span>
-          <span class='top_nav_lines rooms_top_nav_lines'><a href="shop.html">shop</a></span>
-          <span class='top_nav_lines rooms_top_nav_lines'><a href="get_inspired.html">get&nbsp;inspired</a></span>
+          <span class='top_nav_lines'><a href="index.html">about</a></span>
+          <span class='top_nav_lines'><a href="rooms.html">rooms</a></span>
+          <span class='top_nav_lines'><a href="shop.html">shop</a></span>
+          <span class='top_nav_lines'><a href="get_inspired.html">get&nbsp;inspired</a></span>
           <button class="rooms_top_nav_button">
             <div class='rooms_nav_button_lines_fixed'>
               <div class='rooms_nav_button_lines_wrapper'>
@@ -74,8 +81,8 @@
           swedish<br>furniture<br>store
         </div>
       </div>
-      <button class='button_fullscreen' onclick="openFullscreen();">click to open site in fullscreen mode</button>
-      <img class='fullscreen_button' src="./images/rooms_pics/fullscreen_button.svg" alt="" srcset="">
+      <!-- <button class='button_fullscreen' onclick="openFullscreen();">click to open site in fullscreen mode</button> -->
+      <!-- <img class='fullscreen_button' src="./images/rooms_pics/fullscreen_button.svg" alt="" srcset=""> -->
     </div>
   </div>
 

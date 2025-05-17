@@ -161,9 +161,9 @@ button:hover {
   width: 100%;
   transition: 1s;
 }
-// about_localisation
+// about_location
 // about
-.about_localisation {
+.about_location {
   height: 100vh;
   position: relative;
   display: flex;
@@ -171,7 +171,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.about_localisation__background_text {
+.about_location__background_text {
   color: rgba(0, 0, 0, 0.12);
   font-size: calc(11vw + 1vh + 1vmin);
   position: absolute;
@@ -179,42 +179,42 @@ button:hover {
   z-index: 1;
   transition: 1s;
 }
-.about_localisation__content_wrapper {
+.about_location__content_wrapper {
   width: calc(36vw + 32vh + 1vmin);
   display: flex;
   justify-content: center;
 }
-.about_localisation__description_wrapper {
+.about_location__description_wrapper {
   width: 50%;
   color: #312405;
   font-family: "Cormorant Garamond", serif;
   display: flex;
   align-items: center;
 }
-.about_localisation__description {
+.about_location__description {
   background: #b9ab85;
   padding: 5%;
   height: 110%;
   transition: 1s;
 }
-.about_localisation__description_header {
+.about_location__description_header {
   border-bottom: 1px solid #5a450e;
   font-size: calc(1.5vw + 1.5vh + 1vmin);
   width: calc(14vw + 13vh + 1vmin);
   height: 22%;
   text-transform: uppercase;
 }
-.about_localisation__description_content {
+.about_location__description_content {
   margin-top: 8%;
   font-size: calc(0.6vw + 0.6vh + 1vmin);
 }
-.about_localisation__image_wrapper {
+.about_location__image_wrapper {
   width: 60%;
 
   display: flex;
   align-items: center;
 }
-.about_localisation__image {
+.about_location__image {
   width: 100%;
   transition: 1s;
 }
@@ -274,6 +274,10 @@ button:hover {
 
 .rooms_slider_arrow_wrapper_left, .rooms_slider_arrow_wrapper_right:focus{
   outline: 0;
+}
+
+
+.rooms_slider_arrow_wrapper_left{
 }
 
 .rooms_slider_arrow_wrapper_right{
@@ -743,7 +747,6 @@ button:hover {
 .shop_upper_section{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .shop_filter_wrapper{
   width:  calc(15vw + 15vh + 1vmin);
@@ -752,17 +755,12 @@ button:hover {
   justify-content: center;
   text-align: center;
   align-items: center;
-  flex: 1;
 }
 .shop_logo_wrapper{
-  width: calc(36vw + 15vh + 1vmin);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0 2%;
-  flex: 1;
-  order: 0;
 }
 .shop_aeki_logo{
   font-size: calc(10vw + 5vh + 1vmin);
@@ -791,7 +789,6 @@ button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex: 1;
 }
 .shop_search_button{
   margin: 15% auto;
@@ -1009,14 +1006,14 @@ cursor: pointer;
 .shop_item_picture{
   height: calc(12vw + 10vh + 1vmin);
   width: calc(12vw + 10vh + 1vmin);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center;background-repeat: no-repeat;background-size: cover;
+
 }
 .shop_item_info_wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 61%;
 }
 .shop_item_infos_box{
   color: #5b4306;
@@ -1434,11 +1431,8 @@ cursor: pointer;
   .eatndrink_ending_header {
     height: 90vh;
   }
-  .rooms_left_menu_all_div{
-    width: calc(23vw);
-  }
 }
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   .about_header {
     font-size: 13px;
   }
@@ -1460,52 +1454,11 @@ cursor: pointer;
   .rooms_slider_arrow_first_half, .rooms_slider_arrow_second_half{
     width: 2px;
   }
-  .rooms_left_menu_all_div{
-    width: calc(25vw);
-  }
-  .shop_logo_wrapper{
-    flex: 0 0 100%;
-    order: -1;
-  }
-  .shop_search_wrapper{
-    flex: 0 0 100%;
-    order: 2;
-  }
-  .shop_display_items_box_decoration_wrapper{
-    width: 96%; 
-  }
-  .shop_items_wrapper{
-    width: 104%;
-  }
-  .shop_filter_buttons_first_row div,.shop_filter_buttons_second_row div{
-    font-size: calc(1.1vw + 0.4vh + 0vmin); 
-  }
-  .shop_filter_button_color_choice,.shop_filter_button_price_choice,.shop_filter_button_date_choice,.shop_filter_button_style_choice{
-    height: calc(10vw + 2vh + 1vmin);
-    font-size: calc(0.5vw + 0.5vh + 0.5vmin); 
-  }
-  .shop_filter_button_color,.shop_filter_button_price,.shop_filter_button_date,.shop_filter_button_style{
-    height: calc(10vw + 2vh + 1vmin);
-    font-size: calc(2.5vw + 0.5vh + 0.5vmin); 
-  }
-}
-@media (max-width: 642px) {
-  .rooms_left_menu_all_div{
-    width: calc(30vw);
-  }
-  .rooms_top_nav_lines a{
-    font-size: calc(0.5vw + 1vh + 1vmin);
-  }
+
 }
 @media (max-width: 560px) {
   .about_header {
     font-size: 11px;
-  }
-  .rooms_top_nav_lines a{
-    margin: calc(0.3vw + 0.3vh + 0.3vmin);
-  }
-  .rooms_top_nav{
-    padding-right: calc(1vw + 3vh + 1vmin);
   }
 }
 @media (max-width: 450px) {
@@ -1524,28 +1477,11 @@ cursor: pointer;
   .eatndrink_ending_header {
     height: 40vh;
   }
-  .about_top_nav_lines a{
-    font-size:calc(2.5vw + 1vh + 1vmin);
-    margin: 3px;
+  .top_nav_lines a{
+    font-size:calc(0.1vw + 1vh + 1vmin);
   }
   .rooms_left_menu_all{
     padding-top: calc(0.1vw + 0.5vh + 0.5vmin);
-  }
-  .shop_left_menu_wrapper{
-    height: 64vh;
-  }
-  .rooms_top_nav_lines a{
-    margin: calc(0.1vw + 0.2vh + 0.3vmin);
-    font-size:calc(0.5vw + 1vh + 1vmin);
-  }
-  .rooms_left_menu_all_div{
-    width: calc(35vw);
-  }
-  .shop_items_wrapper{
-    width: 138%;
-  }
-  .shop_left_menu_all{
-    height: 4vh;
   }
 }
 @media (max-width: 410px) {
@@ -1563,30 +1499,10 @@ cursor: pointer;
   .right_arr {
     transform: rotate(60deg) translate(19px, -16px);
   }
-  .top_nav_lines a{
-    font-size:calc(0.5vw + 0.9vh + 1vmin);
-  }
-  .rooms_top_nav_lines a{
-    margin: calc(0.1vw + 0.1vh + 0.2vmin);
-    font-size:calc(0.3vw + 1vh + 1vmin);
-  }
 }
 @media (max-width: 375px) {
   .about_header {
     font-size: 7px;
-  }
-  .about_top_nav_lines a{
-    font-size:calc(2vw + 0.9vh + 1vmin);
-    margin: 3px;
-  }
-  .rooms_top_nav{
-    padding-right: calc(1vw + 2vh + 1vmin);
-  }
-  .rooms_top_nav_lines a{
-    font-size:calc(0.3vw + 0.9vh + 1vmin);
-  }
-  .rooms_left_menu_all_div{
-    padding-left: calc(1vw + 1vh + 1vmin);
   }
 }
 ::selection {

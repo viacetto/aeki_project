@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href='./images/icon/favicon.ico'>
-    <link rel="icon" type="image/png" href="./images/icon/favicon-16x16.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./images/icon/favicon-32x32.png" sizes="16x16" />
     <title>AEKI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
@@ -18,8 +18,10 @@
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
 </head>
-<body>
-    <div style="display:none" class="white_loading_effect">
+
+<body class="loading">
+    <div class="light" id="loader"></div>
+    <div hidden id="main-content" class=" white_loading_effect">
         <div class="get_inspired_nav_wrapper">
             <nav class='get_inspired_nav'>
                 <span class='top_nav_lines'><a href="index.html">about</a></span>
