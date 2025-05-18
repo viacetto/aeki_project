@@ -1,7 +1,11 @@
 window.addEventListener("load", () => {
   document.body.classList.remove("loading");
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("main-content").hidden = false;
+  $("#loader").css("opacity", 0);
+  setTimeout(() => {
+    $("#loader").css("display", "none");
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("main-content").hidden = false;
+  }, 1000);
 });
 //rooms
 $(document).ready(function () {
@@ -764,6 +768,7 @@ $(".rooms_slider_arrow_wrapper_right").on("click", function () {
     $(".rooms_crosses_info").css("background-color", currentColor);
   }, 50);
   $(`.newButtonWrapper`).remove();
+
   let prevTargetUrl = `url(./images/rooms_pics/${roomName}/${roomName}_${roomNumber}.jpg)`;
   let prevEl = $(`[data-bg-url="${roomName}/${roomName}_${roomNumber}"]`)
     .css(`z-index`, `-1`)
