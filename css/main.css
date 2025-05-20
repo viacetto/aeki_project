@@ -510,7 +510,6 @@ button:hover {
   width: 100%;
   height: 100%;
 }
-  
 .cross_point {
   border: 0px;
   border-radius: 50px;
@@ -1007,7 +1006,8 @@ button:hover {
 
 .shop_left_menu_wrapper {
   color: #806621;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
